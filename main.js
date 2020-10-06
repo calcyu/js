@@ -1,0 +1,1 @@
+document.write('<h2>js牛b</h2>');

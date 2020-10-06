@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //声明一个变量
+        var count=0;//声明变量的同时赋值
+        //声明函数：包含了特定功能的代码块,可以反复使用
+        var count2; 
+        count2 = 100; //赋值
+        function increment(){
+            //变量
+            count2 = count2 + 1;
+            //BOM操作 浏览器对象模式 window
+            window.alert('第'+count2+'次');
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick='alert("第"+(++count)+"次")'>点我</button>
+    <input id="btn" type="button" value="点我2"  > 
+    <script>
+        var btnElement = document.getElementById('btn');
+        console.log(typeof btnElement);
+        // alert(btnElement)
+        btnElement.onclick = increment;
+    </script>
+</body>
+</html>
