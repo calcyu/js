@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = 1+2*3/4-5+"6";
+        console.log(a);
+        var b = 17;
+        var c = b%10;
+
+        var d = c++;
+        var e = ++c;
+        //++在前先+1再赋值，++在后先赋值再+1
+        console.log(d,e);
+
+        //关系运算符
+        a = 1;
+        b = "1";
+        console.log("a==b",a==b ,a===b);
+        // typescript 是 js超集
+        //逻辑运算符 && || !
+        a = prompt('请输入分数');
+        console.log("typeof a",typeof a,"parseInt(a)",typeof parseInt(a))
+        console.log(parseInt(a)+10);
+        var b = a>80 && a<90; //布尔类型  true|false
+        console.log("b, !b",b, !b);
+        var c = b ? '良':'其他';
+        console.log(c);
+         
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
